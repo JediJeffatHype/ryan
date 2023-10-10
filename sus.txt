@@ -3,7 +3,7 @@ Set WshShell = CreateObject("WScript.Shell")
 
 Set objFSO = CreateObject("Scripting.FileSystemObject")
 
-imageFilePath = "C:\ProgramData\sus\ryan.jpg"
+imageFilePath = "C:\ProgramData\sus\ryan.gif"
 soundFilePath = "C:\ProgramData\sus\ryan.wav"
 intervalInSeconds = 10
 
