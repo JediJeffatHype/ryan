@@ -6,10 +6,10 @@ soundFilePath = "C:\ProgramData\sus\ryan.wav"
 intervalInSeconds = 10
 
 Do
-For i = 1 To 50
-    WshShell.SendKeys Chr(&hAF)
-    WScript.Sleep 100 ' Sleep for 100 milliseconds between each key press (adjust as needed)
-Next
+    For i = 1 To 50
+        WshShell.SendKeys Chr(&hAF)
+        WScript.Sleep 100 ' Sleep for 100 milliseconds between each key press (adjust as needed)
+    Next
     ' Open image file
     If objFSO.FileExists(imageFilePath) Then
         objShell.Run imageFilePath
