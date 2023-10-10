@@ -1,7 +1,7 @@
 Set objShell = CreateObject("WScript.Shell")
 Set objFSO = CreateObject("Scripting.FileSystemObject")
 
-imageFilePath = "C:\ProgramData\sus\ryan.jpg"
+imageFilePath = "C:\ProgramData\sus\ryan.gif"
 soundFilePath = "C:\ProgramData\sus\ryan.wav"
 intervalInSeconds = 10
 
@@ -15,7 +15,7 @@ Do
     If objFSO.FileExists(soundFilePath) Then
         Set objSound = CreateObject("WMPlayer.OCX.7")
         objSound.URL = soundFilePath
-        objSound.settings.volume = 100
+        objSound.settings.volume = 100 ' Set volume to maximum (0-100)
         objSound.controls.play
     End If
 
